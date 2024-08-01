@@ -1,0 +1,74 @@
+
+.Day{
+    width: 200px;
+    height: 140px;
+    background: lightgray;
+    border: 1px solid red;
+    border-radius: 5px;
+
+
+}
+
+.Day .DayItteration {
+
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 25px;
+    border: 1px solid red;
+    border-radius: 0% 0% 70% 0%;
+
+
+}
+
+.WeekRow{
+
+
+
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+
+    display: contents; /* Make days direct children of #Calender */
+}
+
+
+.Container-Calender{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Create 7 equal columns */
+    gap: 5px; /* Add some spacing between grid items */
+}
+
+
+.Calender-Parent{
+    padding: 50px;
+
+    border: 2px solid red;
+}
+.DayHeader { /* Style for the day of week headers */
+     font-weight: bold;
+     background-color: #f0f0f0; /* Example background color */
+ }
+
+.MonthDisplay {
+    text-align: center;
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Add some space below the month display */
+    grid-column: 1 / 8; /* This will make it span all 7 columns if your using a grid layout */
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.WeekDay{
+
+    text-align: center;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    border-top-left-radius: 10px;  /* Adjust the radius as needed */
+    border-top-right-radius: 10px; /* Adjust the radius as needed */
+}
